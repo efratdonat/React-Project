@@ -32,7 +32,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path={ROUTES.ABOUT} element={<AboutPage />} />
-      <Route path={ROUTES.CARDS} element={<CardsPage />} />
+      <Route path={ROUTES.ROOT} element={<CardsPage />} />
       <Route path={`${ROUTES.CARD_INFO}/:id`} element={<CardDetailPage />} /> {/** /card-info/kjshdf98sdf98s */}
       <Route path={ROUTES.LOGIN} element={<LoginPage />} />
       <Route path={ROUTES.MY_CARDS} element={<MyCardsPage />} />
