@@ -7,6 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import IconButton from "@mui/material/IconButton";
 import { useTheme } from "../../../../providers/ThemeProvider"
 import { useSearchParams } from "react-router-dom";
+
 const SearchBar = () => {
   const { isDark } = useTheme();
   const [searchParams, setSearch] = useSearchParams();
