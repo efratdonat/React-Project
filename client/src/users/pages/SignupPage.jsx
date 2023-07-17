@@ -11,6 +11,7 @@ import Input from "../../forms/components/Input";
 import Form from "../../forms/components/Form";
 import { CheckBox } from "@mui/icons-material";
 
+
 const SignupPage = () => {
   const { handleSignup } = useUsers();
   const { value, ...rest } = useForm(
