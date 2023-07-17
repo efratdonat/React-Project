@@ -24,7 +24,7 @@ API Documentation
 For more information about the application's API, please refer to the documentation provided in the docs directory.
 
 Support
-If you have any questions or issues, please contact our support team at efratdonat@gmail.com.
+If you have any questions or issues, please contact me at efratdonat@gmail.com.
 
 License
 This application is licensed under the MIT License. See the LICENSE file for more information.
