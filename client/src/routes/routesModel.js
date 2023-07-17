@@ -1,7 +1,7 @@
 const ROUTES = {
   ROOT: "/",
   ABOUT: "/about",
-  CARDS: "/cards",
+  // CARDS: "/cards",
   MY_CARDS: "/my-cards",
   FAV_CARDS: "/fav-cards",
   CARD_INFO: "/card-info",

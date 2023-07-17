@@ -21,7 +21,7 @@ const SignupPage = () => {
 
   const { user } = useUser();
 
-  if (user) return <Navigate replace to={ROUTES.CARDS} />;
+  if (user) return <Navigate replace to={ROUTES.ROOT} />;
 
   return (
     <Container
