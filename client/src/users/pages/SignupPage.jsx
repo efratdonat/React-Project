@@ -20,6 +20,7 @@ const SignupPage = () => {
   );
 
   const { user } = useUser();
+  
 
   if (user) return <Navigate replace to={ROUTES.ROOT} />;
 
