@@ -7,7 +7,7 @@ import NavBarLink from "../../../../routes/NavBarLink";
 const LogoIcon = () => {
   return (
     <NavBarLink
-      to={ROUTES.CARDS}
+      to={ROUTES.ROOT}
       sx={{ color: "#fff", textDecorationLine: "none" }}
     >
 
