@@ -1,6 +1,5 @@
 import { Container, FormControlLabel, Grid } from "@mui/material";
 import { Navigate } from "react-router-dom";
-import PageHeader from "../../components/PageHeader";
 import ROUTES from "../../routes/routesModel";
 import useUsers from "../hooks/useUsers";
 import useForm from "../../forms/hooks/useForm";
@@ -11,7 +10,6 @@ import Input from "../../forms/components/Input";
 import Form from "../../forms/components/Form";
 import { CheckBox } from "@mui/icons-material";
 
-
 const SignupPage = () => {
   const { handleSignup } = useUsers();
   const { value, ...rest } = useForm(
@@ -21,7 +19,6 @@ const SignupPage = () => {
   );
 
   const { user } = useUser();
-  
 
   if (user) return <Navigate replace to={ROUTES.ROOT} />;
 
@@ -40,13 +37,13 @@ const SignupPage = () => {
         onReset={rest.handleReset}
         styles={{ maxWidth: "800px" }}
         title="register"
-        to={ROUTES.CARDS}
+        to={ROUTES.ROOT}
       >
         <Input
           name="first"
           label="first name"
           error={value.errors.first}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -54,7 +51,7 @@ const SignupPage = () => {
           name="middle"
           label="middle name"
           error={value.errors.middle}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
           required={false}
@@ -63,7 +60,7 @@ const SignupPage = () => {
           name="last"
           label="last name"
           error={value.errors.last}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -72,7 +69,7 @@ const SignupPage = () => {
           label="phone"
           type="phone"
           error={value.errors.phone}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -81,7 +78,7 @@ const SignupPage = () => {
           label="email"
           type="email"
           error={value.errors.email}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -90,7 +87,7 @@ const SignupPage = () => {
           label="password"
           type="password"
           error={value.errors.password}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -98,7 +95,7 @@ const SignupPage = () => {
           name="url"
           label="image url"
           error={value.errors.url}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
           required={false}
@@ -107,7 +104,7 @@ const SignupPage = () => {
           name="alt"
           label="image alt"
           error={value.errors.alt}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
           required={false}
@@ -116,7 +113,7 @@ const SignupPage = () => {
           name="state"
           label="state"
           error={value.errors.state}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
           required={false}
@@ -125,7 +122,7 @@ const SignupPage = () => {
           label="country"
           name="country"
           error={value.errors.country}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -133,7 +130,7 @@ const SignupPage = () => {
           name="city"
           label="city"
           error={value.errors.city}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -141,7 +138,7 @@ const SignupPage = () => {
           name="street"
           label="street"
           error={value.errors.street}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -150,7 +147,7 @@ const SignupPage = () => {
           label="house Number"
           type="number"
           error={value.errors.houseNumber}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
         />
@@ -158,7 +155,7 @@ const SignupPage = () => {
           name="zip"
           label="zip"
           error={value.errors.zip}
-          onChange={rest.handleChange}
+          handleChange={rest.handleChange}
           data={value.formData}
           sm={6}
           required={false}
