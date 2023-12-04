@@ -23,8 +23,8 @@
       "address": {
         "country": "israel",
         "city": "tel-aviv",
-        "street": "magnive",
-        "houseNumber": "5"
+        "street": "Arlozorov",
+        "houseNumber": "1"
       },
       "image": { "url": "", "alt": "" }
     },
@@ -36,9 +36,9 @@
       "password": "Aa1234!",
       "address": {
         "country": "israel",
-        "city": "tel-aviv",
-        "street": "magnive",
-        "houseNumber": "5"
+        "city": "Beer Sheva",
+        "street": "Reshi",
+        "houseNumber": "10"
       },
       "image": { "url": "", "alt": "" }
     },
@@ -51,8 +51,8 @@
       "password": "Aa1234!",
       "address": {
         "country": "israel",
-        "city": "tel-aviv",
-        "street": "magnive",
+        "city": "Bnei Brak",
+        "street": "Breuer",
         "houseNumber": "5"
       },
       "image": { "url": "", "alt": "" }
